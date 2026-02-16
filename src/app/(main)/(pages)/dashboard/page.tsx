@@ -1,11 +1,13 @@
-import React from "react";
-const DashboardPage = () => {
+import { Globe3DDemoSecond } from "@/components/Globe3DDemoSecond";
+import { BackgroundBeamsWithCollisionDemo } from "@/components/BackgroundBeam";
+export default function Page() {
   return (
-    <div className="flex flex-col gap-4 relative">
-      <h1 className="text-4xl sticky top-0 z-[10] p-6 bg-background/50 backdrop-blur-lg flex items-center border-b">
-        Dashboard
-      </h1>
-    </div>
+    <main>
+      {/* <h2 className="mb-4 text-2xl font-bold text-neutral-900 dark:text-white"></h2> */}
+      <div className=" ">
+        <BackgroundBeamsWithCollisionDemo />
+      </div>
+      {/* <Globe3DDemoSecond /> */}
+    </main>
   );
-};
-export default DashboardPage;
+}

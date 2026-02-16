@@ -122,3 +122,13 @@ model Workflows {
   User              User     @relation(fields: [userId], references: [clerkId])
   userId            String
 }
+model Submission {
+  id        String   @id @default(cuid())
+  name      String?
+  email     String   @unique
+  discord   String?
+  message   String?
+  createdAt DateTime @default(now())
+}
+
+
