@@ -22,7 +22,7 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "types": ["react","react-dom", "@uploadcare/blocks/types/jsx"]
+    "types": ["react", "react-dom", "@uploadcare/blocks/types/jsx"]
   },
   "include": [
     "next-env.d.ts",
@@ -30,7 +30,8 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "src/types/**/*.d.ts"
   ],
   "exclude": ["node_modules"]
 }
