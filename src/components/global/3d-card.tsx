@@ -134,14 +134,16 @@ export const CardItem = <T extends React.ElementType = "div">({
     rotateZ,
   ]);
 
+  const SafeTag = Tag as React.ComponentType<any>;
+
   return (
-    <Tag
+    <SafeTag
       ref={ref as any}
       className={cn("w-fit transition duration-200 ease-linear", className)}
       {...(rest as any)}
     >
       {children}
-    </Tag>
+    </SafeTag>
   );
 };
 
