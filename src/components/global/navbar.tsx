@@ -70,8 +70,8 @@ const Navbar = (props: Props) => {
         <SignedOut>
           <SignInButton
             mode="modal"
-            afterSignInUrl="/dashboard"
-            afterSignUpUrl="/dashboard"
+            forceRedirectUrl="/dashboard"
+            signUpForceRedirectUrl="/dashboard"
           >
             <button
               className="relative inline-flex h-10 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2
